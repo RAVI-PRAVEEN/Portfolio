@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif; /* Or your preferred font */
+}
+/* Adjusts the top margin for sections */
+section {
+  margin-top: 80px; /* Replace 80px with the actual height of your navbar */
+}
+
+/* Sticky Navbar (Optional) */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: white; /* Ensure visibility */
+}
+:root {
+  --navbar-height:75px; /* Adjust based on your actual navbar height */
+}
+
+/* Use the variable in section spacing */
+section {
+  margin-top: var(--navbar-height);
+}
+
+@media (max-width: 768px) {
+  :root {
+    --navbar-height: 60px; /* Adjust for smaller screens */
+  }
+}
+
+
+section {
+  scroll-margin-top: var(--navbar-height); /* Ensures smooth scroll stops below navbar */
+}
+
