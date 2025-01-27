@@ -17,7 +17,6 @@ const About = () => {
             high-quality projects.
           </p>
           <ul className="about-details">
-            <li><strong>DOB:</strong> 07-02-2002</li>
             <li><strong>Email:</strong> <a href="mailto:ravipraveenmamidi126@gmail.com">ravipraveenmamidi126@gmail.com</a></li>
             <li><strong>Phone:</strong> +91 8500630643</li>
             <li><strong>Place:</strong> Vizianagaram, India</li>
