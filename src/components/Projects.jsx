@@ -1,8 +1,8 @@
 import React from "react";
-import "./Certifications.css"; // Custom styles
+import "./Projects.css"; // Custom styles
 
-const Certifications = () => {
-  const certificationsData = [
+const Projects = () => {
+  const ProjectsData = [
     {
       title: "AWS Certified Solutions Architect",
       issuingOrganization: "Amazon Web Services (AWS)",
@@ -15,15 +15,15 @@ const Certifications = () => {
   ];
 
   return (
-    <section id="certifications">
+    <section id="projects">
       <h2 className="section-title">
-        <i className="fas fa-certificate"></i> My Certifications
+        <i className="fas fa-certificate"></i> My Projects
       </h2>
       <p className="section-subtitle">
-        A showcase of my certified skills and achievements.
+        A showcase of my Projects.
       </p>
       <div className="certifications-grid">
-        {certificationsData.map((cert, index) => (
+        {ProjectsData.map((cert, index) => (
           <div key={index} className="cert-card">
             <h3 className="cert-title">{cert.title}</h3>
             <div className="cert-details">
@@ -31,11 +31,7 @@ const Certifications = () => {
                 <p className="cert-organization">{cert.issuingOrganization}</p>
                 <p className="cert-date">{cert.date}</p>
               </div>
-              <img
-                src={`./assets/${cert.image}`}
-                alt={`${cert.issuingOrganization} logo`}
-                className="cert-logo"
-              />
+              
             </div>
             <a
               href={cert.certificateLink}
@@ -43,7 +39,7 @@ const Certifications = () => {
               rel="noopener noreferrer"
               className="cert-link"
             >
-              View Certificate
+              View Project
             </a>
           </div>
         ))}
@@ -52,4 +48,4 @@ const Certifications = () => {
   );
 };
 
-export default Certifications;
+export default Projects;

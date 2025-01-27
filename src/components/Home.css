@@ -4,9 +4,10 @@
     justify-content: center;
     align-items: center;
     height: 90vh;
-    background: linear-gradient(135deg, #5445fd, #846ffd);
+    background: linear-gradient(125deg, #5e50fa, #846ffd);
     color: white;
     text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     }
   
   .home-content {
@@ -15,7 +16,7 @@
   
   .home-content h1 {
     font-size: 3rem;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
   
   .home-content h1 span {
@@ -43,8 +44,8 @@
   
   /* Home.css */
 .profile-photo {
-  width: 150px; /* Adjust the size as needed */
-  height: 150px;
+  width: 180px; /* Adjust the size as needed */
+  height: 180px;
   border-radius: 50%; /* Makes the photo circular */
   object-fit: cover; /* Ensures the image fits perfectly in the circle */
   margin-bottom: 20px; /* Adds space below the photo */
@@ -70,4 +71,9 @@
 .social-icon:hover {
   color: #ffffff; /* Change color on hover */
   transform: scale(1.2); /* Slight zoom effect */
+}
+
+.Animation{
+  font-size:20px;
+  font-style:oblique;
 }

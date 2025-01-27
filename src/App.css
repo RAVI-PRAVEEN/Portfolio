@@ -20,7 +20,7 @@ header {
   top: 0;
   width: 100%;
   z-index: 1000;
-  background-color: white; /* Ensure visibility */
+  background-color: #f4f8fc; /* Ensure visibility */
 }
 :root {
   --navbar-height:75px; /* Adjust based on your actual navbar height */

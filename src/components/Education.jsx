@@ -34,6 +34,7 @@ const Education = () => {
       {/* <p className="section-subtitle">
         Education Is Not The Learning Of Facts, But The Training Of The Mind To Think.
       </p> */}
+      <br/>
       <div className="education-container">
         {educationData.map((edu, index) => (
           <div key={index} className="education-card">

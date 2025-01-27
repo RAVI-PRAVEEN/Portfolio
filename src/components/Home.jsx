@@ -42,7 +42,7 @@ const Home = () => {
           Hello, I'm <span>Ravi Praveen</span>
         </h1>
 
-        <Typed
+        <Typed className='Animation'
           strings={['Developer', 'Tech Enthusiast', 'Innovator']}
           typeSpeed={50}
           backSpeed={30}

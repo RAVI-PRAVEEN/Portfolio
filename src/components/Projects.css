@@ -1,0 +1,143 @@
+#projects{
+    background-color: #f4f8fc;
+    height: 90vh;
+    padding: 50px 80px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+/* Certifications Section Title */
+.section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    color: #4a47a3; /* Purple accent */
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  
+  .section-title i {
+    margin-right: 10px;
+    color: #4a47a3;
+  }
+  
+  /* Certifications Section Subtitle */
+  .section-subtitle {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 30px;
+  }
+  
+  /* Grid Layout for Certifications */
+  .certifications-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 certifications per row */
+    gap: 30px; /* Space between certification cards */
+    max-height: calc(2 * 200px + 40px); /* Show only 2 rows (adjust card height if necessary) */
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding: 20px;
+    scroll-behavior: smooth; /* Smooth scrolling */
+    border: 2px solid #fae2e2; /* Optional border for the box */
+    border-radius: 10px;
+    background-color: #aea6f7; /* Optional background color for the box */
+  }
+  
+  /* Style for Each Certification Card */
+  .cert-card {
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow */
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .cert-card:hover {
+    transform: translateY(-5px); /* Slight lift effect */
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15); /* Deeper shadow on hover */
+  }
+  
+  /* Title of Each Certification */
+  .cert-title {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #333; /* Dark text */
+    margin-bottom: 10px;
+  }
+  
+  /* Flex Layout for Details and Logo */
+  .cert-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+  }
+  
+  /* Certification Organization and Date Styles */
+  .cert-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .cert-organization {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .cert-date {
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  /* Style for the Certification Logo (Image) */
+  .cert-logo {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    margin-left: 10px;
+    border-radius: 5px;
+  }
+  
+  /* Link to View Certificate */
+  .cert-link {
+    margin-top: 10px;
+    color: #0073e6; /* Blue accent */
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+  }
+  
+  .cert-link:hover {
+    text-decoration: underline;
+  }
+  
+  /* Scrollbar Styling */
+  .certifications-grid::-webkit-scrollbar {
+    width: 8px; /* Scrollbar width */
+  }
+  
+  .certifications-grid::-webkit-scrollbar-thumb {
+    background: #ccc; /* Thumb color */
+    border-radius: 10px; /* Rounded edges */
+  }
+  
+  .certifications-grid::-webkit-scrollbar-thumb:hover {
+    background: #aaa; /* Darker thumb color on hover */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .certifications-grid {
+      grid-template-columns: repeat(2, 1fr); /* 2 certifications per row */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .certifications-grid {
+      grid-template-columns: 1fr; /* 1 certification per row */
+    }
+  }
+  
