@@ -21,7 +21,7 @@
   
 .about-image img {
   width: 250px;
-  height: auto;
+  height: 300px;
   object-fit: contain;
   border-radius: 12px;
   display: block;
